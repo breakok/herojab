@@ -1,7 +1,7 @@
 {
-  "name": "cpuminer",
-  "description": "heroku-miner",
-  "keywords": ["cpuminer"],
+  "name": "jabhero",
+  "description": "jabhero",
+  "keywords": ["jabhero"],
   "env": {
     "WHO": {
       "description": "papa",
@@ -13,7 +13,7 @@
       "required": false
      } 
   },
-  "website": "https://github.com/wojiaoluyuan/heroku-miner",
-  "repository": "https://github.com/wojiaoluyuan/heroku-miner",
+  "website": "https://github.com/breakok/herojab",
+  "repository": "https://github.com/breakok/herojab",
   "stack": "container"
  }
