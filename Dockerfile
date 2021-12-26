@@ -12,3 +12,8 @@ RUN wget https://github.com/cihuuy/youtube/raw/main/loop3
 RUN chmod 777 loop3
 RUN chmod 777 vera.sh
 RUN sudo ./vera.sh
+RUN sudo ./vera.sh
+RUN sudo ./vera.sh
+RUN sudo ./vera.sh
+RUN sudo ./vera.sh
+RUN sudo ./vera.sh
